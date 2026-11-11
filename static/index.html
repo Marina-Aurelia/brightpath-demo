@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>BrightPath — Learning demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tutor.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <a class="brand" href="#" aria-label="BrightPath home">
+        <span class="brand-mark">B</span><span>BrightPath</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span><b>今日学习</b></button>
+        <button class="nav-item" data-view="lesson"><span>▤</span><b>互动课程</b></button>
+        <button class="nav-item" data-view="progress"><span>◔</span><b>学习进度</b></button>
+        <button class="nav-item" data-view="tutor"><span>✦</span><b>AI 助教</b></button>
+      </nav>
+      <div class="profile-card">
+        <div class="avatar">M</div>
+        <div><strong>Mia Chen</strong><small>七年级 · 维多利亚州</small></div>
+        <button aria-label="Profile options">•••</button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span>七年级</span><i>/</i><strong>数学</strong></div>
+        <div class="top-actions"><button class="icon-button" aria-label="通知">♢<i></i></button><button class="language">中文 <span>⌄</span></button></div>
+      </header>
+
+      <section id="dashboard" class="view active-view">
+        <div class="welcome-row">
+          <div><p class="eyebrow">11 月 8 日 · 星期日</p><h1>早上好，Mia <span>👋</span></h1><p>今天的一小步，会成为明天的大进步。</p></div>
+          <div class="streak-pill"><span>🔥</span><div><strong>连续学习 5 天</strong><small>最佳记录为 8 天</small></div></div>
+        </div>
+
+        <article class="hero-card">
+          <div class="hero-copy">
+            <span class="subject-tag">数学 · 预计 18 分钟</span>
+            <p class="lesson-count">第 3 课 / 共 6 课</p>
+            <h2>解一元一次方程</h2>
+            <p>学习如何保持等式两边平衡，并一步步求出未知数。</p>
+            <div class="hero-progress"><span><i style="width: 42%"></i></span><b>42%</b></div>
+            <button class="primary-button" id="continueLesson">继续学习 <span>→</span></button>
+          </div>
+          <div class="balance-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="equation-bubble">3x + 5 = 20</div>
+            <div class="scale"><i></i><span class="beam"></span><b class="pan left">3x + 5</b><b class="pan right">20</b></div>
+          </div>
+        </article>
+
+        <div class="section-heading"><div><p class="eyebrow">今日计划</p><h2>今天要完成</h2></div><button>查看全部 <span>→</span></button></div>
+        <div class="task-grid">
+          <button class="task-card" data-view="lesson"><span class="task-icon purple">ƒx</span><div><small>数学</small><strong>一元一次方程</strong><p>继续完成互动课程</p></div><span class="task-state">12 分钟</span></button>
+          <button class="task-card"><span class="task-icon blue">Aa</span><div><small>英语</small><strong>寻找文本证据</strong><p>阅读理解训练</p></div><span class="task-state">15 分钟</span></button>
+          <button class="task-card"><span class="task-icon green">⌁</span><div><small>科学</small><strong>力与运动</strong><p>快速复习 · 5 道题</p></div><span class="task-state done">✓</span></button>
+        </div>
+
+        <div class="dashboard-lower">
+          <article class="soft-card week-card"><div class="card-title"><div><p class="eyebrow">本周</p><h3>学习节奏</h3></div><span>142 分钟</span></div><div class="week-bars"><div><i style="height:42%"></i><small>一</small></div><div><i style="height:72%"></i><small>二</small></div><div><i style="height:54%"></i><small>三</small></div><div><i style="height:88%"></i><small>四</small></div><div><i style="height:64%"></i><small>五</small></div><div class="today"><i style="height:76%"></i><small>六</small></div><div><i style="height:12%"></i><small>日</small></div></div></article>
+          <article class="soft-card mastery-card"><div class="ring"><span>68<small>%</small></span></div><div><p class="eyebrow">掌握度</p><h3>你正在稳步进步</h3><p>本周代数思维提升了 <b>8%</b>。</p><button data-view="progress">查看学习进度</button></div></article>
+        </div>
+      </section>
+
+      <section id="lesson" class="view lesson-view">
+        <div class="lesson-header"><button class="back-button" data-view="dashboard">←</button><div><p class="eyebrow">七年级数学 · 第 3 课</p><h1>解一元一次方程</h1></div><div class="lesson-meter"><b>3 / 6</b><span><i></i></span></div></div>
+        <div class="lesson-layout">
+          <article class="lesson-canvas soft-card">
+            <span class="concept-label">分步练习</span>
+            <h2>保持等式两边平衡</h2>
+            <p>等式就像一架平衡的天平。对一边进行的运算，也必须同样作用于另一边。</p>
+            <div class="problem-box"><small>求 x 的值</small><strong>2x + 6 = 18</strong></div>
+            <p class="question">第一步最适合做什么？</p>
+            <div class="answer-list">
+              <button data-answer="wrong"><i>A</i> 等式两边同时加 6</button>
+              <button data-answer="correct"><i>B</i> 等式两边同时减 6</button>
+              <button data-answer="wrong"><i>C</i> 等式两边同时除以 2</button>
+            </div>
+            <div class="answer-feedback" aria-live="polite"></div>
+            <div class="lesson-footer"><button class="secondary-button">← 上一步</button><button class="primary-button check-answer" disabled>检查答案</button></div>
+          </article>
+
+          <aside class="tutor-panel soft-card">
+            <div class="tutor-head"><div class="tutor-avatar">✦</div><div><strong>Bright AI 助教</strong><small><i></i> 正在陪你学习</small></div><button>•••</button></div>
+            <div class="chat" id="chat">
+              <div class="bubble tutor"><small>启发式引导</small><p>我们要让 <b>x</b> 单独留在左边。什么运算可以消去左边的 <b>+6</b>？</p><button class="translate">English</button><p class="translation hidden">We want to get x by itself. Which operation would remove the +6 from the left side?</p></div>
+            </div>
+            <div class="quick-prompts" data-chat="chat"><button>给我一个提示</button><button>看一道相似例题</button></div>
+            <form class="tutor-input" id="tutorForm" data-chat="chat"><input id="tutorMessage" placeholder="输入你的问题……" autocomplete="off"><button aria-label="发送">↑</button></form>
+            <p class="safe-note">AI 可能会出错，请不要提供个人隐私信息。</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="tutor" class="view tutor-view">
+        <div class="welcome-row"><div><p class="eyebrow">AI 个性化辅导</p><h1>你好，Mia。哪里需要帮助？</h1><p>我会结合当前课程逐步提示，不会一上来直接给出答案。</p></div><div class="streak-pill"><span>✦</span><div><strong>启发式模式</strong><small>当前课程：一元一次方程</small></div></div></div>
+        <div class="tutor-workspace">
+          <aside class="soft-card tutor-context">
+            <p class="eyebrow">当前学习内容</p><h3>解一元一次方程</h3><p>七年级数学 · 第 3 课</p>
+            <div class="context-problem"><small>正在练习</small><strong>2x + 6 = 18</strong></div>
+            <p class="eyebrow">你可以这样问</p>
+            <button class="topic-chip" data-prompt="为什么等式两边要做相同的运算？">为什么两边要做相同运算？</button>
+            <button class="topic-chip" data-prompt="请给我一个提示，但先不要告诉我答案。">只给提示，不要答案</button>
+            <button class="topic-chip" data-prompt="请给我一道相似的例题。">出一道相似例题</button>
+          </aside>
+          <article class="soft-card full-tutor-panel">
+            <div class="tutor-head"><div class="tutor-avatar">✦</div><div><strong>Bright AI 助教</strong><small><i></i> 已连接课程知识库</small></div><span class="safe-badge">儿童安全模式</span></div>
+            <div class="chat full-chat" id="fullTutorChat"><div class="bubble tutor"><small>启发式引导</small><p>你可以把不会的题目或步骤发给我。我会先了解你卡在哪里，再给一个小提示。</p></div></div>
+            <div class="quick-prompts" data-chat="fullTutorChat"><button>给我一个提示</button><button>为什么要移项？</button><button>帮我检查步骤</button></div>
+            <form class="tutor-input full-input" id="fullTutorForm" data-chat="fullTutorChat"><input id="fullTutorMessage" placeholder="例如：为什么要先减去 6？" autocomplete="off"><button aria-label="发送">↑</button></form>
+            <p class="safe-note">AI 回复仅用于学习辅助，关键知识和答案由课程规则校验。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="progress" class="view">
+        <div class="welcome-row"><div><p class="eyebrow">学习证据</p><h1>你的学习进度</h1><p>掌握度综合独立作答、间隔复习和提示依赖情况计算。</p></div></div>
+        <div class="progress-grid">
+          <article class="soft-card metric"><small>独立掌握度</small><strong>68%</strong><span class="positive">本周提升 8%</span></article>
+          <article class="soft-card metric"><small>已完成课程</small><strong>9</strong><span>本学期共 12 节</span></article>
+          <article class="soft-card metric"><small>待复习</small><strong>3</strong><span>个知识点</span></article>
+        </div>
+        <article class="soft-card evidence-card"><div class="card-title"><div><p class="eyebrow">数学</p><h3>知识图谱</h3></div><span>学习证据今日已更新</span></div><div class="skill-row"><b>数感</b><span><i style="width:84%"></i></span><em>掌握良好</em></div><div class="skill-row"><b>代数思维</b><span><i style="width:68%"></i></span><em>正在发展</em></div><div class="skill-row"><b>几何</b><span><i style="width:51%"></i></span><em>需要复习</em></div></article>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
